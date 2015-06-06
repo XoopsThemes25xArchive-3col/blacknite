@@ -1,0 +1,10 @@
+#######################
+INSTALLATION
+#######################
+1) Upload the "blacknite" folder to your webserver's XOOPS_ROOT/themes/ directory
+
+3) Enable the "blacknite" theme through your site General settings for "Default Theme". *There is no Admin theme for this theme*
+
+4)Enjoy!
+
+Comments are welcome at http://sandbox.scribblesgraphics.com. 

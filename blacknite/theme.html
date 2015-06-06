@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+		<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+		<meta name="robots" content="<{$xoops_meta_robots}>" />
+		<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+		<meta name="description" content="<{$xoops_meta_description}>" />
+		<meta name="rating" content="<{$xoops_meta_rating}>" />
+		<meta name="author" content="<{$xoops_meta_author}>" />
+		<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+		<meta name="generator" content="XOOPS" />
+		<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+		<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+		<link href="<{$xoops_url}>/xoops.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="<{$xoops_themecss}>" type="text/css" rel="stylesheet" media="screen" />
+		<!-- RMV: added module header --><{$xoops_module_header}> 
+		<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+		<script type="text/javascript">
+</script>
+		<!--Theme Design by Scribbles Graphics (http://sandbox.scribblesgraphics.com). This credit must stay intact, please do no remove. -->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<table class="toptable" summary="" border="0" cellspacing="0" cellpadding="0" align="center" background="<{$xoops_imageurl}>images/bg_hvid.gif">
+				<tr>
+					<td>
+						<table summary="" width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td id="headerlogo" width="160" height="66"><img src="<{$xoops_imageurl}>images/logo1.gif" alt="" height="66" width="160" border="0" /></td>
+								<td id="headerbanner" style="vertical-align:middle;" colspan="2" height="66"><{$xoops_banner}></td>
+							</tr>
+							<tr>
+								<td id="headerlogo" height="42"><img src="<{$xoops_imageurl}>images/logo2.gif" alt="" /></td>
+								<td id="headerbar" valign="middle" height="42" background="<{$xoops_imageurl}>images/tabc.gif">
+									<table summary="" width="100%" border="0">
+										<tr>
+											<td width="50%">
+												<form style="margin:0;padding:0" action="<{$xoops_url}>/search.php" method="post">
+													<input class="boite" onmouseover="this.focus();" type="text" name="query" value="Search" size="15" onfocus="if(this.value == 'Search') this.value = '';" /> <input type="hidden" name="action" value="results" /><input class="boutonvert" type="submit" name="searchSubmit" value="Go!" /><a href="<{$xoops_url}>/search.php">Advanced search</a>
+												</form>
+											</td>
+											<td align="center" width="425"> </td>
+										</tr>
+									</table>
+								</td>
+								<td id="headerbar" align="right" valign="middle" width="160" height="42" background="<{$xoops_imageurl}>images/tabc.gif">
+									<div align="right">
+										<table summary="" width="160" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td style="text-align:center; vertical-align:bottom;" nowrap="nowrap" width="100%"><font color="white"><a id="topmenu" href="<{$xoops_url}>/register.php">Register!</a> | <a id="topmenu" href="<{$xoops_url}>/user.php">Lost Password?</a></font></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table summary="" width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td id="headernav" valign="middle" width="75%"><img src="<{$xoops_imageurl}>images/pixel.gif" alt="" name="spacer" height="14" width="1" border="0" /> <nobr>   <a href="<{$xoops_url}>/"><b>Home</b></a> | <a href="<{$xoops_url}>/"><b>News</b></a> | <a href="<{$xoops_url}>/"><b>Downloads</b></a> | <a href="<{$xoops_url}>/"><b>Blog</b></a> | <a href="<{$xoops_url}>/"><b>Contact</b></a> | </nobr> </td>
+								<td id="headernav" align="right" valign="middle" nowrap="nowrap" width="20%" height="14"><{if !$xoops_isuser}>
+									<form style="margin:0;padding:0" action="<{$xoops_url}>/user.php" method="post">
+										Username:<input class="boite" onmouseover="this.focus();" type="text" name="uname" value="" size="12" onfocus="if(this.value == 'username') this.value = '';" />  Password:<input class="boite" type="password" name="pass" size="8"/> <input type="hidden" name="op" value="login" /><input class="boutonvert" type="submit" value="Go" />
+									</form>
+									<{else}> <b>Hello, <a href="<{$xoops_url}>/user.php"><{$xoops_uname}>!</a></b> <a href="<{$xoops_url}>/user.php">View Your Account </a><{/if}></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table class="maintable" cellspacing="0">
+				<tr><!-- Display left blocks start--><{if $xoops_showlblock == 1}>
+					<td id="leftcolumn"><!-- Start left blocks loop --><{foreach item=block from=$xoops_lblocks}> <{include file="blacknite/theme_blockleft.html"}> <{/foreach}> <!-- End left blocks loop --></td>
+					<{/if}> <!-- Display left blocks end -->
+					<td id="centercolumn"><!-- Display center blocks if any --><{if $xoops_showcblock == 1}>
+						<table cellspacing="0">
+							<tr>
+								<td id="centerCcolumn" colspan="2"><!-- Start center-center blocks loop --><{foreach item=block from=$xoops_ccblocks}> <{include file="blacknite/theme_blockcenter_c.html"}> <{/foreach}> <!-- End center-center blocks loop --></td>
+							</tr>
+							<tr>
+								<td id="centerLcolumn"><!-- Start center-left blocks loop --><{foreach item=block from=$xoops_clblocks}> <{include file="blacknite/theme_blockcenter_l.html"}> <{/foreach}> <!-- End center-left blocks loop --></td>
+								<td id="centerRcolumn"><!-- Start center-right blocks loop --><{foreach item=block from=$xoops_crblocks}> <{include file="blacknite/theme_blockcenter_r.html"}> <{/foreach}> <!-- End center-right blocks loop --></td>
+							</tr>
+						</table>
+						<{/if}> <!-- End display center blocks -->
+						<div id="content">
+							<{$xoops_contents}></div>
+						<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+						<table cellspacing="0">
+							<{if $xoBlocks.page_bottomcenter}>
+							<tr>
+								<td id="centerCcolumn" colspan="2"><{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="blacknite/theme_blockcenter_c.html"}><{/foreach}></td>
+							</tr>
+							<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+							<tr>
+								<td id="centerLcolumn"><{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="blacknite/theme_blockcenter_l.html"}><{/foreach}></td>
+								<td id="centerRcolumn"><{foreach from=$xoBlocks.page_bottomright item=block}><{include file="blacknite/theme_blockcenter_r.html"}><{/foreach}></td>
+							</tr>
+							<{/if}>
+						</table>
+						<{/if}></td>
+					<!-- Display right blocks start--><{if $xoops_showrblock == 1}>
+					<td id="rightcolumn"><!-- Start right blocks loop --><{foreach item=block from=$xoops_rblocks}> <{include file="blacknite/theme_blockright.html"}> <{/foreach}> <!-- End right blocks loop --></td>
+					<{/if}> <!-- Display right blocks end--></tr>
+			</table>
+			<table class="footertable" cellspacing="0">
+				<tr>
+					<td id="footerbar"><{$xoops_footer}><br />
+						 <font size="-2">Theme design by <a title="Scribbles Sandbox" href="http://sandbox.scribblesgraphics.com" target="_blank">Scribbles Sandbox</a></font> <!-- Thank you for keeping this line in the theme :-) //-->
+						<div style="display: none;">
+							Scribbles Sandbox</div>
+						<!-- Thank you for keeping this line in the theme :-) //--></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+</html>
